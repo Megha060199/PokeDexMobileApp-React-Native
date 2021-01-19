@@ -60,10 +60,12 @@ return (
 <Text style = {{color:'white',marginTop:15,marginLeft:25,fontSize:18}}>PokeDex</Text>
             </View>
             <Text style = {{textAlign:'center',fontSize:16,fontWeight:'600',marginVertical:13}}>Pokemon's</Text>
-       <FlatList data = {pokemonData}
+      {pokemonData.length>0 ?  <FlatList data = {pokemonData}
        style={{flex:1}}
        keyExtractor={(item)=>item.name}
-       renderItem={({item,index})=>renderPokemonList(item,index)}/>
+       renderItem={({item,index})=>renderPokemonList(item,index)}/>:
+       <Text style = {{flex:1,textAlign:'center',textAlignVertical:'center'}}>Loading...</Text>
+    }
     </View>
 )
 }
