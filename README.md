@@ -1,2 +1,8 @@
 # PokeDexAppAssignment
-This application simply displays all pokemon's,shows features of a single pokemon. User can save pokemons locally and view it in the saved list.  
+This is a  mobile application built on ## React Native ## 
+    - display all pokemon's 
+    - Single Pokemon view of all its features
+    - Functionality to save Pokemons
+    - List of Saved Pokemons
+    
+
